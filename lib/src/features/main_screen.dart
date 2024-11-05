@@ -62,8 +62,8 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   void dispose() {
-    // TODO: dispose controllers
     super.dispose();
+    _zipController.dispose();
   }
 
   Future<String> getCityFromZip(String zip) async {
